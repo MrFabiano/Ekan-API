@@ -11,11 +11,17 @@ Esta aplicação é uma API RESTful desenvolvida em Java com Spring Boot para ge
 ## Estrutura do Projeto
 - `src/main/java`: Contém o código-fonte Java.
 - `src/main/resources`: Contém arquivos de configuração, como `application.properties`.
-- 
+
 ## Executar o projeto
 - EkanApplication
 - port: 8080
 - servidor: ApacheTomCat
+
+## Executar H2-CONSOLE
+- URL: http://localhost:8080/h2-console/login.jsp?jsessionid=8926ff821d4f2d07e65a9e29746b8ae6
+- JDBC URL: jdbc:h2:mem:ekan
+- username: ekan
+- password: ekan
   
 # EKAN - API
 ## Endpoints
