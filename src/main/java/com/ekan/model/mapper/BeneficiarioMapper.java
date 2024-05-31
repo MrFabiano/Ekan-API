@@ -45,7 +45,7 @@ public class BeneficiarioMapper {
         documento.setDescricao(documentoDTO.getDescricao());
         documento.setDataInclusao(documentoDTO.getDataInclusao());
         documento.setDataAtualizacao(documentoDTO.getDataAtualizacao());
-        documento.setBeneficiario(beneficiario);  // Set the Beneficiario reference here
+        documento.setBeneficiario(beneficiario);
         return documento;
     }
 
