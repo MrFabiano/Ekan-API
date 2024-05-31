@@ -11,7 +11,12 @@ Esta aplicação é uma API RESTful desenvolvida em Java com Spring Boot para ge
 ## Estrutura do Projeto
 - `src/main/java`: Contém o código-fonte Java.
 - `src/main/resources`: Contém arquivos de configuração, como `application.properties`.
-
+- 
+## Executar o projeto
+- EkanApplication
+- port: 8080
+- servidor: ApacheTomCat
+  
 # EKAN - API
 ## Endpoints
 # Beneficiario
