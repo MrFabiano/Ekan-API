@@ -33,6 +33,29 @@ Esta aplicação é uma API RESTful desenvolvida em Java com Spring Boot para ge
 - PUT: /{id}: update()
 - DELETE /{id}: deleteById()
 
+##Payload de requisição; MODEL
+{
+    "nome": "João da Silva",
+    "telefone": "123456789",
+    "dataNascimento": "1990-01-01",
+    "dataInclusao": "2024-05-28",
+    "dataAtualizacao": "2024-05-28",
+    "documentos": [
+{
+    "tipoDocumento": "CPF",
+    "descricao": "123.456.789-00",
+    "dataInclusao": "1999-05-28",
+    "dataAtualizacao": "2024-05-28"
+},
+     {
+    "tipoDocumento": "RG",
+    "descricao": "MG-12.345.678",
+    "dataInclusao": "1999-05-28",
+    "dataAtualizacao": "2024-05-28"
+        }
+    ]
+}
+
 # EKAN - API
 ## Endpoints
 # Documentos
@@ -60,5 +83,4 @@ Para contribuir com o projeto, siga as instruções no GitHub.
  clone: https://github.com/MrFabiano/Ekan-API.git
 
 ## Notas Adicionais
-- A aplicação utiliza o padrão MVC para separação de responsabilidades.
 - O arquivo `application.properties` contém configurações de banco de dados.
