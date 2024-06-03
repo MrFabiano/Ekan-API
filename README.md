@@ -33,7 +33,8 @@ Esta aplicação é uma API RESTful desenvolvida em Java com Spring Boot para ge
 - PUT: /{id}: update()
 - DELETE /{id}: deleteById()
 
-##Payload de requisição; MODEL
+## Payload de requisição; MODEL
+
 {
     "nome": "João da Silva",
     "telefone": "123456789",
