@@ -42,20 +42,21 @@ Esta aplicação é uma API RESTful desenvolvida em Java com Spring Boot para ge
     "dataInclusao": "2024-05-28",
     "dataAtualizacao": "2024-05-28",
     "documentos": [
-{
-    "tipoDocumento": "CPF",
-    "descricao": "123.456.789-00",
-    "dataInclusao": "1999-05-28",
-    "dataAtualizacao": "2024-05-28"
-},
-     {
-    "tipoDocumento": "RG",
-    "descricao": "MG-12.345.678",
-    "dataInclusao": "1999-05-28",
-    "dataAtualizacao": "2024-05-28"
+        {
+            "tipoDocumento": "CPF",
+            "descricao": "123.456.789-00",
+            "dataInclusao": "2024-05-28",
+            "dataAtualizacao": "2024-05-28"
+        },
+        {
+            "tipoDocumento": "RG",
+            "descricao": "MG-12.345.678",
+            "dataInclusao": "2024-05-28",
+            "dataAtualizacao": "2024-05-28"
         }
     ]
 }
+
 
 # EKAN - API
 ## Endpoints
