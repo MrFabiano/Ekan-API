@@ -22,6 +22,6 @@ public class Documento {
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "beneficiario_id", nullable = false)
     @JsonBackReference
-    private Benificiario beneficiario;
+    private Beneficiario beneficiario;
 
 }

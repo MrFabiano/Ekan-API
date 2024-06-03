@@ -1,25 +1,24 @@
 package com.ekan.model.mapper;
 
-import com.ekan.model.Benificiario;
+import com.ekan.model.Beneficiario;
+
 import com.ekan.model.Documento;
 import com.ekan.model.dto.BeneficiarioDTO;
 import com.ekan.model.dto.DocumentoDTO;
-import com.ekan.repository.BenificiarioRepository;
+import com.ekan.repository.BeneficiarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-
 import java.util.List;
-import java.util.Optional;
 import java.util.stream.Collectors;
 
 @Component
 public class BeneficiarioMapper {
 
     @Autowired
-    private BenificiarioRepository benificiarioRepository;
+    private BeneficiarioRepository beneficiarioRepository;
 
-    public Benificiario convertToEntity(BeneficiarioDTO beneficiarioDTO) {
-        Benificiario beneficiario = new Benificiario();
+    public Beneficiario convertToEntity(BeneficiarioDTO beneficiarioDTO) {
+        Beneficiario beneficiario = new Beneficiario();
         beneficiario.setId(beneficiarioDTO.getId());
         beneficiario.setNome(beneficiarioDTO.getNome());
         beneficiario.setTelefone(beneficiarioDTO.getTelefone());
@@ -38,7 +37,7 @@ public class BeneficiarioMapper {
         return beneficiario;
     }
 
-    public Documento convertToDocumentoEntity(DocumentoDTO documentoDTO, Benificiario beneficiario) {
+    public Documento convertToDocumentoEntity(DocumentoDTO documentoDTO, Beneficiario beneficiario) {
         Documento documento = new Documento();
         documento.setId(documentoDTO.getId());
         documento.setTipoDocumento(documentoDTO.getTipoDocumento());
@@ -50,7 +49,7 @@ public class BeneficiarioMapper {
     }
 
 
-    public BeneficiarioDTO convertToDto(Benificiario beneficiario) {
+    public BeneficiarioDTO convertToDto(Beneficiario beneficiario) {
         BeneficiarioDTO beneficiarioDTO = new BeneficiarioDTO();
         beneficiarioDTO.setId(beneficiario.getId());
         beneficiarioDTO.setNome(beneficiario.getNome());
@@ -76,13 +75,13 @@ public class BeneficiarioMapper {
         documentoDTO.setDataAtualizacao(documento.getDataAtualizacao());
 
         BeneficiarioDTO beneficiarioDTO = new BeneficiarioDTO();
-        Benificiario beneficiario = documento.getBeneficiario();
-        beneficiarioDTO.setId(beneficiario.getId());
-        beneficiarioDTO.setNome(beneficiario.getNome());
-        beneficiarioDTO.setTelefone(beneficiario.getTelefone());
-        beneficiarioDTO.setDataNascimento(beneficiario.getDataNascimento());
-        beneficiarioDTO.setDataInclusao(beneficiario.getDataInclusao());
-        beneficiarioDTO.setDataAtualizacao(beneficiario.getDataAtualizacao());
+        Beneficiario benificiario = documento.getBeneficiario();
+        beneficiarioDTO.setId(benificiario.getId());
+        beneficiarioDTO.setNome(benificiario.getNome());
+        beneficiarioDTO.setTelefone(benificiario.getTelefone());
+        beneficiarioDTO.setDataNascimento(benificiario.getDataNascimento());
+        beneficiarioDTO.setDataInclusao(benificiario.getDataInclusao());
+        beneficiarioDTO.setDataAtualizacao(benificiario.getDataAtualizacao());
 
         documentoDTO.setBeneficiario(beneficiarioDTO);
 
